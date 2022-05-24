@@ -29,6 +29,10 @@ classDiagram
          +getAncho()           
       }
       class Polygon {
+         -int numLados
+         +Polygon()
+         +Polygon(int)
+         +getNumLados()
       }
         
 

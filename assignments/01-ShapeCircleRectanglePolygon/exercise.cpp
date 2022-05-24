@@ -1,3 +1,4 @@
+#include "Polygon.hpp"
 #include "Rectangle.hpp"
 #include "Shape.hpp"
 #include "Circle.hpp"
@@ -18,5 +19,9 @@ int main()
   Rectangle r1{10,2};
 
   std::cout<< r1.draw() << " con un ancho de " << r1.getAncho() << " y un alto de " << r1.getAlto() <<"\n";
+
+  Polygon p1{2,3,5};
+
+  std::cout<< p1.draw() << " con valor en x: " << p1.getValueX() << " y un valor en y: " << p1.getValueY() << " y " << p1.getNumLados() << " lados\n";
   return 0;
 }
